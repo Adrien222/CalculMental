@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/APP/CalculMental/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_correcte.xml" value="0.2694746376811594" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_correcte2.xml" value="0.2694746376811594" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_faux.xml" value="0.33" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_fin.xml" value="0.36666666666666664" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_moyen.xml" value="0.36666666666666664" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.33" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_niveau2.xml" value="0.2694746376811594" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/bien.xml" value="0.36666666666666664" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/moyen.xml" value="0.36666666666666664" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/niveau1.xml" value="0.2694746376811594" />
+        <entry key="..\:/APP/CalculMental/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.322" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

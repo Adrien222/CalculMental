@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calcul Mental</string>
+    <string name="calcul_mental">Calcul Mental</string>
+    <string name="niveau_1">Niveau 1</string>
+    <string name="niveau_2">Niveau 2</string>
+    <string name="niveau_3">Niveau 3</string>
+    <string name="valide">Validé</string>
+    <string name="reponse">Réponse</string>
+    <string name="correcte">Correcte</string>
+    <string name="faux">Faux</string>
+    <string name="bonnes_reponses">Bonnes réponses : /10</string>
+    <string name="suivant">suivant</string>
+    <string name="effacer">effacer</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="bien_joue">Bien joué !</string>
+    <string name="bof">Bof, tu peux mieux faire...</string>
+    <string name="pas_terrible"> Pas terrible...</string>
+</resources>
