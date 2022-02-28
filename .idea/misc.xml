@@ -16,6 +16,9 @@
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/moyen.xml" value="0.36666666666666664" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/niveau1.xml" value="0.2694746376811594" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.322" />
+        <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.14" />
+        <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_scoreboard.xml" value="0.12771739130434784" />
       </map>
     </option>
   </component>

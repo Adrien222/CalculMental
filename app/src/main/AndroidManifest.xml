@@ -16,9 +16,6 @@
             android:name=".ActivityNiveau1"
             android:exported="false" />
         <activity
-            android:name=".ActivityNiveau2"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
