@@ -2,6 +2,7 @@ package neidra.fr.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -36,12 +37,14 @@ public class ActivityNiveau1 extends AppCompatActivity {
     private TextView faux;
     private TextView la_reponse;
     private TextView score;
+    private TextView mauvaises_rep;
     private int premierNbre;
     private int secondNbre;
     private char operateur;
     private int resultat;
     private int cptBonneRep=0;
     private int cptRep=0;
+    private int cptMauvaisesRep=0;
     private String affichageResultat="";
 
     @Override
@@ -63,6 +66,7 @@ public class ActivityNiveau1 extends AppCompatActivity {
         this.faux=findViewById(R.id.faux);
         this.correcte=findViewById(R.id.correcte);
         this.score=findViewById(R.id.score);
+        this.mauvaises_rep=findViewById(R.id.mauvaisesrep);
 
 
         this.btn_zero=findViewById(R.id.btn_zero);
@@ -122,16 +126,24 @@ public class ActivityNiveau1 extends AppCompatActivity {
     }
 
     //Test si la réponse saisi par l'ui est V/F
+    @SuppressLint("SetTextI18n")
     private void vraiFaux(int nbre){
         if(resultat==nbre) {
             correcte.setVisibility(View.VISIBLE);
             cptBonneRep++;
-            score.setText("Bonnes réponses : "+ cptBonneRep+"/10");
+            score.setText(getString(R.string.bonnes_reponses)+ " " +cptBonneRep+"/10");
         } else {
+            addMauvaisesReponses();
             faux.setVisibility(View.VISIBLE);
-            la_reponse.setText("Réponse : " + resultat );
+            la_reponse.setText(getString(R.string.reponse) + " " + resultat );
             la_reponse.setVisibility(View.VISIBLE);
         }
+    }
+
+    //Ajoute et affiche le nombre de mauvaises réponses
+    private void addMauvaisesReponses(){
+        cptMauvaisesRep++;
+        mauvaises_rep.setText(getString(R.string.mauvaises_rep)+ " " +cptMauvaisesRep+"/10");
     }
 
     //Affiche le calcul
@@ -143,7 +155,7 @@ public class ActivityNiveau1 extends AppCompatActivity {
     }
 
     //Retourne le résulat du calcul
-    private int getResultat(){
+    private void getResultat(){
         if(operateur=='+')
             resultat=premierNbre+secondNbre;
         else if(operateur=='-')
@@ -151,19 +163,6 @@ public class ActivityNiveau1 extends AppCompatActivity {
         else
             resultat=premierNbre*secondNbre;
         System.out.println(resultat);
-        return resultat;
-    }
-
-    //Test si l'ui a saisi une val
-    private boolean testSaisieRes(){
-        String recupRes = resultatUI.getText().toString();
-        if(recupRes.matches("")){
-            faux.setVisibility(View.VISIBLE);
-            la_reponse.setText("Réponse : " + resultat );
-            la_reponse.setVisibility(View.VISIBLE);
-            return false;
-        }
-        return true;
     }
 
     //Retour sur la page d'accueil si clique sur btn_home
@@ -187,10 +186,10 @@ public class ActivityNiveau1 extends AppCompatActivity {
     }
 
     private void PageFin(){
-            Intent activityFin = new Intent(this, ActivityFin.class);
-            activityFin.putExtra(ActivityFin.NUMBER, cptBonneRep);
-            startActivity(activityFin);
-            finish();
+        Intent activityFin = new Intent(this, ActivityFin.class);
+        activityFin.putExtra(ActivityFin.NUMBER, cptBonneRep);
+        startActivity(activityFin);
+        finish();
     }
 
     //Affichage de la page avec le calcul à réaliser
@@ -229,8 +228,6 @@ public class ActivityNiveau1 extends AppCompatActivity {
         affichage_calcul.setVisibility(View.INVISIBLE);
         resultatUI.setVisibility(EditText.INVISIBLE);
         resultatUI.setClickable(false);
-        if(testSaisieRes()){
-            vraiFaux(Integer.parseInt(String.valueOf(resultatUI.getText())));
-        }
+        vraiFaux(Integer.parseInt(String.valueOf(resultatUI.getText())));
     }
 }

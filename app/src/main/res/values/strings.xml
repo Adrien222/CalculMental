@@ -4,16 +4,17 @@
     <string name="jouer">Jouer</string>
     <string name="scoreboard">Scoreboard</string>
     <string name="a_propos">À propos</string>
-    <string name="valide">Validé</string>
-    <string name="reponse">Réponse</string>
+    <string name="valide">Valider</string>
+    <string name="reponse">Réponse :</string>
     <string name="correcte">Correcte</string>
     <string name="faux">Faux</string>
-    <string name="bonnes_reponses">Bonnes réponses : /10</string>
+    <string name="bonnes_reponses">Bonnes réponses :</string>
     <string name="suivant">suivant</string>
     <string name="effacer">effacer</string>
     <string name="menu_principal">Menu Principal</string>
     <string name="bien_joue">Bien joué !</string>
-    <string name="bof">Bof, tu peux mieux faire...</string>
-    <string name="pas_terrible"> Pas terrible...</string>
+    <string name="bof">Bof, tu peux mieux faire…</string>
+    <string name="pas_terrible"> Pas terrible…</string>
     <string name="aucun_resultat">Vous n\'avez saisie aucune valeur !</string>
+    <string name="mauvaises_rep">Mauvaises réponses :</string>
 </resources>

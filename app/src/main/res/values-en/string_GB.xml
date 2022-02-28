@@ -2,4 +2,20 @@
 <resources>
     <string name="app_name">Mental Counting</string>
     <string name="calcul_mental">Mental Counting</string>
+    <string name="jouer">Play</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="a_propos">About</string>
+    <string name="valide">Confirm</string>
+    <string name="reponse">Answer :</string>
+    <string name="correcte">Correct</string>
+    <string name="faux">False</string>
+    <string name="bonnes_reponses">good answers :</string>
+    <string name="suivant">next</string>
+    <string name="effacer">erase</string>
+    <string name="menu_principal">Home</string>
+    <string name="bien_joue">Well done !</string>
+    <string name="bof">You can do better…</string>
+    <string name="pas_terrible">Not so good</string>
+    <string name="aucun_resultat">You have not entered any value !</string>
+    <string name="mauvaises_rep">Wrong answers :</string>
 </resources>
