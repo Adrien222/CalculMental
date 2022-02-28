@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -98,16 +99,12 @@ public class ActivityNiveau1 extends AppCompatActivity {
         btn_suivant.setOnClickListener(view -> affichagePageCalcul());
 
         btn_home.setOnClickListener(view -> retourPageHome());
-
     }
 
     // Fonction qui retourne un entier compris entre 0 et 20
     private int nombreAleatoire(){
         Random r = new Random();
-        int nbreAlea = r.nextInt(12);
-
-        return nbreAlea;
-
+        return r.nextInt(12);
     }
 
     // Fonction qui retourne un opérateur aléatoire entre +, - et *
@@ -115,15 +112,12 @@ public class ActivityNiveau1 extends AppCompatActivity {
         char operateur ;
         Random op = new Random();
         int operateurAleatoire = op.nextInt(3);
-        if(operateurAleatoire==0){
+        if(operateurAleatoire==0)
             operateur='+';
-        }
-        else if(operateurAleatoire==1){
+        else if(operateurAleatoire==1)
             operateur='-';
-        }
         else
             operateur='x';
-
         return operateur;
     }
 
@@ -133,8 +127,7 @@ public class ActivityNiveau1 extends AppCompatActivity {
             correcte.setVisibility(View.VISIBLE);
             cptBonneRep++;
             score.setText("Bonnes réponses : "+ cptBonneRep+"/10");
-        }
-        else {
+        } else {
             faux.setVisibility(View.VISIBLE);
             la_reponse.setText("Réponse : " + resultat );
             la_reponse.setVisibility(View.VISIBLE);
@@ -151,31 +144,26 @@ public class ActivityNiveau1 extends AppCompatActivity {
 
     //Retourne le résulat du calcul
     private int getResultat(){
-        if(operateur=='+'){
+        if(operateur=='+')
             resultat=premierNbre+secondNbre;
-        }
-        else if(operateur=='-'){
+        else if(operateur=='-')
             resultat=premierNbre-secondNbre;
-        }
         else
             resultat=premierNbre*secondNbre;
         System.out.println(resultat);
-
         return resultat;
     }
 
     //Test si l'ui a saisi une val
     private boolean testSaisieRes(){
         String recupRes = resultatUI.getText().toString();
-            if(recupRes.matches("")){
-                faux.setVisibility(View.VISIBLE);
-                la_reponse.setText("Réponse : " + resultat );
-                la_reponse.setVisibility(View.VISIBLE);
-                return false;
-            }
-            else{
-                return true;
-            }
+        if(recupRes.matches("")){
+            faux.setVisibility(View.VISIBLE);
+            la_reponse.setText("Réponse : " + resultat );
+            la_reponse.setVisibility(View.VISIBLE);
+            return false;
+        }
+        return true;
     }
 
     //Retour sur la page d'accueil si clique sur btn_home
@@ -205,14 +193,11 @@ public class ActivityNiveau1 extends AppCompatActivity {
             finish();
     }
 
-
-
     //Affichage de la page avec le calcul à réaliser
     private void affichagePageCalcul() {
         if (cptRep>=10){
             PageFin();
-        }
-        else {
+        } else {
             btn_valide.setClickable(true);
             btn_valide.setVisibility(Button.VISIBLE);
             btn_suivant.setClickable(false);
@@ -231,6 +216,10 @@ public class ActivityNiveau1 extends AppCompatActivity {
 
     //Affichage de la page avec le résultat du calcul
     private void affichagePageResultat() {
+        if(resultatUI.getText().toString().equalsIgnoreCase("")){
+            Toast.makeText(this, getString(R.string.aucun_resultat), Toast.LENGTH_SHORT).show();
+            return;
+        }
         cptRep++;
         getResultat();
         btn_valide.setClickable(false);
@@ -240,10 +229,8 @@ public class ActivityNiveau1 extends AppCompatActivity {
         affichage_calcul.setVisibility(View.INVISIBLE);
         resultatUI.setVisibility(EditText.INVISIBLE);
         resultatUI.setClickable(false);
-        boolean ASaisi= testSaisieRes();
-        if(ASaisi==true){
-            int number = Integer.parseInt(String.valueOf(resultatUI.getText()));
-            vraiFaux(number);
+        if(testSaisieRes()){
+            vraiFaux(Integer.parseInt(String.valueOf(resultatUI.getText())));
         }
     }
 }
