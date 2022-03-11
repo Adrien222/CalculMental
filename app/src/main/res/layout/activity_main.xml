@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_width="500dp"
@@ -51,7 +51,7 @@
 
 
     <Button
-        android:id="@+id/button_n1"
+        android:id="@+id/button_jouer"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="@string/jouer"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/button_n2"
+        android:id="@+id/button_scoreboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/scoreboard"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:id="@+id/button_n3"
+        android:id="@+id/button_a_propos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/a_propos"

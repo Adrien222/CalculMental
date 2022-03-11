@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ActivityScoreboard extends AppCompatActivity {
+public class ActivityAPropos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scoreboard);
+        setContentView(R.layout.activity_apropos);
     }
 }

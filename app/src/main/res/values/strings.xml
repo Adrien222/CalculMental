@@ -3,7 +3,6 @@
     <string name="calcul_mental">Calcul Mental</string>
     <string name="jouer">Jouer</string>
     <string name="scoreboard">Scoreboard</string>
-    <string name="a_propos">À propos</string>
     <string name="valide">Valider</string>
     <string name="reponse">Réponse :</string>
     <string name="correcte">Correcte</string>
@@ -17,4 +16,8 @@
     <string name="pas_terrible"> Pas terrible…</string>
     <string name="aucun_resultat">Vous n\'avez saisie aucune valeur !</string>
     <string name="mauvaises_rep">Mauvaises réponses :</string>
+    <string name="a_propos">À propos</string>
+    <string name="tatarkovic_alexis" translatable="false">TATARKOVIC Alexis</string>
+    <string name="chretien_adrien" translatable="false">CHRETIEN Adrien</string>
+    <string name="groupe_4">Groupe 4</string>
 </resources>

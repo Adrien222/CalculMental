@@ -60,7 +60,7 @@ public class ActivityFin extends AppCompatActivity {
             imagePasBien.setVisibility(View.VISIBLE);
             pasBien.setVisibility(View.VISIBLE);
         }
-        score.setText("Bonnes Réponses : "+cptResultat+" /10");
+        score.setText(getString(R.string.bonnes_reponses)+ " " +cptResultat+"/10");
 
     }
 
