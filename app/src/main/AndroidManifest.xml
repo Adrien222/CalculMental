@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ActivityAPropos"
+            android:name=".view.ActivityAPropos"
             android:exported="false" />
         <activity
-            android:name=".ActivityScoreboard"
+            android:name=".view.ActivityScoreboard"
             android:exported="false" />
         <activity
-            android:name=".ActivityFin"
+            android:name=".view.ActivityFin"
             android:exported="false" />
         <activity
-            android:name=".ActivityNiveau1"
+            android:name=".view.ActivityNiveau1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

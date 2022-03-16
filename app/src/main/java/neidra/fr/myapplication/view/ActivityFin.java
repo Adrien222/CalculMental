@@ -1,4 +1,4 @@
-package neidra.fr.myapplication;
+package neidra.fr.myapplication.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import neidra.fr.myapplication.R;
 
 public class ActivityFin extends AppCompatActivity {
 
@@ -65,7 +67,7 @@ public class ActivityFin extends AppCompatActivity {
     }
 
     private void retourHome() {
-        Intent mainActivity=new Intent(this,MainActivity.class);
+        Intent mainActivity=new Intent(this, MainActivity.class);
         startActivity(mainActivity);
         finish();
     }

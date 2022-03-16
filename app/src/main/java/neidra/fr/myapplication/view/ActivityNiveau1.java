@@ -1,4 +1,4 @@
-package neidra.fr.myapplication;
+package neidra.fr.myapplication.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
+
+import neidra.fr.myapplication.R;
 
 public class ActivityNiveau1 extends AppCompatActivity {
 
