@@ -2,7 +2,7 @@
     <string name="app_name">Calcul Mental</string>
     <string name="calcul_mental">Calcul Mental</string>
     <string name="jouer">Jouer</string>
-    <string name="scoreboard">Scoreboard</string>
+    <string name="scoreboard">Tableau des scores</string>
     <string name="valide">Valider</string>
     <string name="reponse">Réponse :</string>
     <string name="correcte">Correcte</string>
@@ -21,4 +21,5 @@
     <string name="chretien_adrien" translatable="false">CHRETIEN Adrien</string>
     <string name="groupe_4">Groupe 4</string>
     <string name="langages">Langues disponibles : Français, Anglais</string>
+    <string name="nombrescore">Nombre de scores enregistré dans la base :</string>
 </resources>

@@ -8,7 +8,7 @@
     tools:context=".ActivityScoreboard">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tw_titre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/scoreboard"
@@ -20,4 +20,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.060000002" />
+
+    <TextView
+        android:id="@+id/tw_nombrescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombrescore"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
 </androidx.constraintlayout.widget.ConstraintLayout>

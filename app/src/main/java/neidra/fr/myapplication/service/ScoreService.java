@@ -11,7 +11,7 @@ public class ScoreService {
         this.scoreBoardDao = scoreBoardDao;
     }
 
-    public Long getCalculCount(){
+    public Long getScoreCount(){
         return scoreBoardDao.count();
     }
 
