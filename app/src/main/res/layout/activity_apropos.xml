@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tw_alexis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tatarkovic_alexis"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tw_adrien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chretien_adrien"
@@ -46,11 +46,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tw_alexis"
         app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tw_groupe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/groupe_4"
@@ -60,6 +60,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tw_adrien"
         app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/tw_langues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/langages"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_groupe"
+        app:layout_constraintVertical_bias="0.215" />
 </androidx.constraintlayout.widget.ConstraintLayout>

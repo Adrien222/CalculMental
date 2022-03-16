@@ -19,4 +19,5 @@
     <string name="aucun_resultat">You have not entered any value !</string>
     <string name="mauvaises_rep">Wrong answers :</string>
     <string name="groupe_4">Group 4</string>
+    <string name="langages">Available languages : French, English</string>
 </resources>

@@ -20,4 +20,5 @@
     <string name="tatarkovic_alexis" translatable="false">TATARKOVIC Alexis</string>
     <string name="chretien_adrien" translatable="false">CHRETIEN Adrien</string>
     <string name="groupe_4">Groupe 4</string>
+    <string name="langages">Langues disponibles : Français, Anglais</string>
 </resources>
