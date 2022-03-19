@@ -26,4 +26,5 @@
     <string name="pseudonyme">Pseudonyme :</string>
     <string name="pseudo">Pseudo</string>
     <string name="aucun_pseudo">Vous n\'avez saisie aucun pseudo !</string>
+    <string name="register_score">Votre score :</string>
 </resources>

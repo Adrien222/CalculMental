@@ -25,5 +25,5 @@
     <string name="pseudonyme">Nickname :</string>
     <string name="pseudo">Name</string>
     <string name="aucun_pseudo">You have not entered any nickname !</string>
-
+    <string name="register_score">Your score :</string>
 </resources>

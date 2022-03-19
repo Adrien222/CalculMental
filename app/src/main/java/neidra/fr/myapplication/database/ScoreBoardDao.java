@@ -11,8 +11,8 @@ public class ScoreBoardDao  extends BaseDao<Score>{
         super(helper);
     }
 
-    static String score = "premierElement";
-    static String nickname = "deuxiemeElement";
+    static String score = "score";
+    static String nickname = "nickname";
 
     @Override
     protected String getTableName() {

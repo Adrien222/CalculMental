@@ -4,7 +4,6 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/APP/CalculMental/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_apropos.xml" value="0.33" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_correcte.xml" value="0.2694746376811594" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_correcte2.xml" value="0.2694746376811594" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_faux.xml" value="0.33" />
@@ -13,8 +12,6 @@
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_moyen.xml" value="0.36666666666666664" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.33" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_niveau2.xml" value="0.2694746376811594" />
-        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
-        <entry key="..\:/APP/CalculMental/app/src/main/res/layout/activity_scoreboard.xml" value="0.33" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/bien.xml" value="0.36666666666666664" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/moyen.xml" value="0.36666666666666664" />
         <entry key="..\:/APP/CalculMental/app/src/main/res/layout/niveau1.xml" value="0.2694746376811594" />
@@ -22,7 +19,10 @@
         <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.14" />
         <entry key="..\:/Android/CalculMental/app/src/main/res/layout/activity_scoreboard.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/alexi/OneDrive/Cours/SEMESTRE4/Android/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.5" />
+        <entry key="..\:/Users/alexi/OneDrive/Cours/SEMESTRE4/Android/CalculMental/app/src/main/res/layout/activity_apropos.xml" value="0.23052536231884058" />
+        <entry key="..\:/Users/alexi/OneDrive/Cours/SEMESTRE4/Android/CalculMental/app/src/main/res/layout/activity_niveau1.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/alexi/OneDrive/Cours/SEMESTRE4/Android/CalculMental/app/src/main/res/layout/activity_register.xml" value="0.23052536231884058" />
+        <entry key="..\:/Users/alexi/OneDrive/Cours/SEMESTRE4/Android/CalculMental/app/src/main/res/layout/activity_scoreboard.xml" value="0.23052536231884058" />
       </map>
     </option>
   </component>

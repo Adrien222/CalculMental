@@ -13,8 +13,7 @@ import neidra.fr.myapplication.R;
 
 public class ActivityFin extends AppCompatActivity {
 
-    public static final String NUMBER = "CPTRESULTAT";
-    private TextView score;
+    private TextView score_tw;
     private Button menu_principal;
     private ImageView imageBien;
     private ImageView imagePasBien;
@@ -24,13 +23,15 @@ public class ActivityFin extends AppCompatActivity {
     private TextView pasBien;
     private Button enregistrer;
 
+    private int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fin);
-        Intent values = getIntent();
-        int cpt = values.getIntExtra(NUMBER,0);
-        String cptResultat = String.valueOf(cpt);
+
+        this.score = getIntent().getIntExtra("score",0);
+        String cptResultat = String.valueOf(score);
 
         this.imageBien=findViewById(R.id.imageBien);
         this.imagePasBien=findViewById(R.id.imagePasBien);
@@ -40,9 +41,9 @@ public class ActivityFin extends AppCompatActivity {
         this.moyen=findViewById(R.id.moyen);
         this.pasBien=findViewById(R.id.pasBien);
 
-        this.score=findViewById(R.id.score);
+        this.score_tw =findViewById(R.id.score);
 
-        affichage(cpt,cptResultat);
+        affichage(score,cptResultat);
 
         this.menu_principal=findViewById(R.id.menu_principal);
         menu_principal.setOnClickListener(view->retourHome());
@@ -56,6 +57,7 @@ public class ActivityFin extends AppCompatActivity {
     //Envoie sur la page d'enregistrement
     private void PageEnregitrer() {
         Intent activityRegister=new Intent(this, ActivityRegister.class);
+        activityRegister.putExtra("score", score);
         startActivity(activityRegister);
         finish();
     }
@@ -74,7 +76,7 @@ public class ActivityFin extends AppCompatActivity {
             imagePasBien.setVisibility(View.VISIBLE);
             pasBien.setVisibility(View.VISIBLE);
         }
-        score.setText(getString(R.string.bonnes_reponses)+ " " +cptResultat+"/10");
+        score_tw.setText(getString(R.string.bonnes_reponses)+ " " +cptResultat+"/10");
 
     }
 
