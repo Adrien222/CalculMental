@@ -31,6 +31,7 @@ public class ActivityRegister extends AppCompatActivity {
 
     }
 
+    // Affiche un toast si l'ui n'a pas saisi de pseudo sinon retour sur la page scoreboard
     private void ouvrirPageScoreboard() {
         if(editTextPseudo.getText().toString().equalsIgnoreCase("")){
             Toast.makeText(this, getString(R.string.aucun_pseudo), Toast.LENGTH_SHORT).show();
@@ -41,6 +42,7 @@ public class ActivityRegister extends AppCompatActivity {
         finish();
     }
 
+    // Retour sur la page menue principale
     private void retourPageHome() {
         Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(mainActivity);
