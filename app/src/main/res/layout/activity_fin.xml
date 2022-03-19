@@ -35,14 +35,27 @@
 
     <Button
         android:id="@+id/menu_principal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
         android:text="@string/menu_principal"
         android:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageBien" />
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/enregistrer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBien"
+        app:layout_constraintVertical_bias="0.796" />
 
     <ImageView
         android:id="@+id/imageBien"

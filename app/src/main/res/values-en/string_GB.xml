@@ -21,4 +21,9 @@
     <string name="groupe_4">Group 4</string>
     <string name="langages">Available languages : French, English</string>
     <string name="nombrescore">Number of score saved in database :</string>
+    <string name="enregistrer">register</string>
+    <string name="pseudonyme">Nickname :</string>
+    <string name="pseudo">Name</string>
+    <string name="aucun_pseudo">You have not entered any nickname !</string>
+
 </resources>

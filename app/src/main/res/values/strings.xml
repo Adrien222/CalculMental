@@ -22,4 +22,8 @@
     <string name="groupe_4">Groupe 4</string>
     <string name="langages">Langues disponibles : Français, Anglais</string>
     <string name="nombrescore">Nombre de scores enregistrés dans la base :</string>
+    <string name="enregistrer">s\'enregistrer</string>
+    <string name="pseudonyme">Pseudonyme :</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="aucun_pseudo">Vous n\'avez saisie aucun pseudo !</string>
 </resources>

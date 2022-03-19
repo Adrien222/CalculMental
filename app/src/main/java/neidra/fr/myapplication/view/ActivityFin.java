@@ -22,6 +22,7 @@ public class ActivityFin extends AppCompatActivity {
     private TextView bien;
     private TextView moyen;
     private TextView pasBien;
+    private Button enregistrer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +47,20 @@ public class ActivityFin extends AppCompatActivity {
         this.menu_principal=findViewById(R.id.menu_principal);
         menu_principal.setOnClickListener(view->retourHome());
 
+        this.enregistrer=findViewById(R.id.enregistrer);
+        enregistrer.setOnClickListener(view->PageEnregitrer());
+
 
     }
 
+    //Envoie sur la page d'enregistrement
+    private void PageEnregitrer() {
+        Intent activityRegister=new Intent(this, ActivityRegister.class);
+        startActivity(activityRegister);
+        finish();
+    }
+
+    // Affichage d'une image en fonction du score de l'utilsateur
     private void affichage(int cpt, String cptResultat){
         if(cpt>=7){
             imageBien.setVisibility(View.VISIBLE);
@@ -66,6 +78,7 @@ public class ActivityFin extends AppCompatActivity {
 
     }
 
+    // Retour sur la page home
     private void retourHome() {
         Intent mainActivity=new Intent(this, MainActivity.class);
         startActivity(mainActivity);

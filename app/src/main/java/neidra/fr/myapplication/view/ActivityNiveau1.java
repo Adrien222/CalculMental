@@ -187,6 +187,7 @@ public class ActivityNiveau1 extends AppCompatActivity {
         resultatUI.setText(affichageResultat);
     }
 
+    //Retourne sur l'activité de fin
     private void PageFin(){
         Intent activityFin = new Intent(this, ActivityFin.class);
         activityFin.putExtra(ActivityFin.NUMBER, cptBonneRep);
