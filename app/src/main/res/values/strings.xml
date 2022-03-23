@@ -27,4 +27,10 @@
     <string name="pseudo">Pseudo</string>
     <string name="aucun_pseudo">Vous n\'avez saisie aucun pseudo !</string>
     <string name="register_score">Votre score :</string>
+    <string name="titre_bonus" translatable="false">Bonus</string>
+    <string name="bonus">- Ajout d\'un bouton pour retourner au menu principal\n
+        - Ajout d\'une page de fin qui diffère selon le résultat du joueur\n
+        - Ajout d\'un logo d\'application et d\'un background\n
+        - Pas de changement de page entre les calculs\n
+        - Page d\'enregistrement du score à la fin d\'une partie</string>
 </resources>

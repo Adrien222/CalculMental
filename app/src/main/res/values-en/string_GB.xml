@@ -26,4 +26,10 @@
     <string name="pseudo">Name</string>
     <string name="aucun_pseudo">You have not entered any nickname !</string>
     <string name="register_score">Your score :</string>
+    <string name="bonus">
+        - Added a button to return to the main menu\n
+        - Added an end page that differs depending on the player\'s result\n
+        - Added application logo and background\n
+        - No page change between calculations\n
+        - Score registration page at the end of a game\n</string>
 </resources>
